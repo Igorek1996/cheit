@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: $font;
+  color: $text-color;
+  font-size: $fz;
+  line-height: $lh;
+  background: #e5e5e5;
+  overflow-x: hidden;
+  height: 100%;
+
+  .ovh {
+    overflow: hidden;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+a,
+button {
+  cursor: pointer;
+  transition: $trsn;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 1140px;
+  padding: 0 15px;
+  max-width: 100%;
+  margin: 0 auto;
+
+  @include tablet() {
+    width: 768px;
+  }
+}
+
+ul,
+ol,
+li {
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  color: $text-color;
+}
+
+h1 {
+  font-size: 38px;
+  line-height: 70px;
+
+  @include mobile {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+}
+
+h2 {
+  font-size: 36px;
+  line-height: 42px;
+
+  @include mobile {
+    font-size: 22px;
+    line-height: 1.2;
+  }
+}
+
+.ttu {
+  text-transform: uppercase;
+}
+
+.white {
+  color: $white;
+}
+
+svg {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.section {
+  padding: 60px 0 70px;
+  @include mobile {
+    padding: 20px 0;
+  }
+  &__heading {
+    text-align: center;
+    color: $text-color;
+    margin-bottom: 40px;
+    @include mobile {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 12px;
+  }
+
+  &__text {
+  }
+}

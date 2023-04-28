@@ -1,0 +1,23 @@
+.btn {
+  font-family: $font;
+  border: none;
+  background-color: $primary;
+  border-radius: 4px;
+  padding: 15px 30px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: $white;
+  text-align: center;
+  &:hover {
+    background-color: rgba($primary, 0.8);
+  }
+  @include tablet {
+    &:hover {
+      background-color: $primary;
+    }
+  }
+  @include mobile {
+    width: 100%;
+  }
+}
